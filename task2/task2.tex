@@ -1,0 +1,23 @@
+\subsection{Task 2: Turbulent Flow Inside An Expanding Pipe}
+\label{sec:task2}
+
+This section revolves around the properties and analysis of a turbulent flow a fluid through an expansion. The same geometry and boundary conditions are used as the section before. However, some of the material properties and initial conditions have been changed to increase the Reynolds number to $10^5$ which results in a turbulent flow.\\
+
+\noindent To accommodate this change, the viscosity of the fluid, $\mu$, has been decreased to $0.001 Pa.s$ while the density, $\rho$ has been increased to $10^3$ $kg/m^{3}$. Also, the inlet velocity has been upped from 0.554 to 10 $m/s$. Plugging these values into equation \ref{eq:reynolds}, we calculate the Re to be $10^5$. \\
+
+
+\noindent In this analysis, two different simulations will be done using two different turbulence models below:
+\begin{itemize}
+    \item The $k - \epsilon$ model with standard model constants
+    \item The $k - \omega$ model with standard model constants
+\end{itemize}
+
+\subsubsection{$k - \epsilon$ vs $k - \omega$ model}
+
+While we are using two different turbulence models in our simulations, it is better to state their mechanisms from a higher level and compare their advantages over each other.\\
+
+\noindent The $k-\epsilon$ model is one of the most popular methods to model turbulence. This model uses 2 transport equations to calculate K, the turbulent kinetic energy, and $\epsilon$, the turbulence dissipation rate. This relates to the kinetic energy transformed to heat caused by viscosity. Once these values are known, $\mu_t$, the turbulent viscosity is calculated and plugged in to the Navier-Stokes equations.\\
+
+\noindent However, this model has its own disadvantages, especially near the system boundaries. This model needed damping functions near the boundaries which could get inaccurate easily. Also, it is not feasible in supersonic speeds, making it unpractical for areas like turbomachinery and aerodynamics. \\
+
+\noindent To fill this gap, $k-\omega$ model is used. Unlike the former, this method uses $\omega$, which is the specific turbulence dissipation rate. Since this method does not utilize damping functions, it does not inherit the inaccuracies of them in the vicinity of system boundaries. This makes it a better model for near wall areas.

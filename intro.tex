@@ -1,0 +1,28 @@
+This project and report revolves around the study of a viscous fluid which flows inside of a pipe that has an expansion in it. The objective is to calculate the flow field, predict the pressure loss
+due to the expansion, and understand the underlying physics causing the pressure loss. The analysis made is then compared to both theoretical models and experimental data gathered from different studies made on this subject.\\
+
+\noindent Hammad et al. \cite{hammad_ötügen_arik_1999} has conducted a study on this matter and their experimental data is frequently used in this report to compare and validate the results of the simulation, along with providing theoretical models for the flow and the expansion.\\ 
+
+
+\noindent This problem is a rather relevant one since in many applications, a fluid goes through a series of events than causes its pressure to rise and drop rapidly, quite frequently. Therefore, understanding the physics behind phenomenons like this will come in handy in both analyzing and designing processes that will incorporate this kind of behavior of a fluid.\\
+
+
+\noindent Later on, different solvers that make advantage of different properties have been used and their results are compared (laminar, $k -\epsilon$, $k - \omega$ solvers). Even though they have their differences, on high level, they all solve the Navier-Stokes equations for given conditions. Since they use iterative methods to solve these differential equations, we have make check for convergence. Their advantages and setbacks over each other are briefly described.\\
+
+
+\noindent Finally, pressure losses for different ratios and types of expansions are studied and are compared with experimental data. The pressure drops and streamlines are examined to understand the flow and pressure relationships.\\
+
+
+\noindent As a bonus part, the flow will be examined for different expansion ratios and types like sudden expansion or gradual expansion. Following this, the optimized design and geometry of the pipe that minimizes the pressure drop induced by the expansion is studied.\\
+
+
+
+\noindent Furthermore, throughout the process, I was introduced to need engineering tools and post-processing techniques. Even though I was familiar with solid mechanics parts of ANSYS, this was my first time trying on ANSYS Fluent. It can be said that it has a quite user-friendly interface especially compared to its open-source competition like OpenFOAM. \\
+
+
+
+\noindent In the next section, problem statements for each task and the steps to solving them will be explained in detail and their results and discussions will be described on the further sections of the report. \\
+
+
+
+\textbf{\textit{Keywords:}} CFD, internal flow, pipe expansion
